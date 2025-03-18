@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Greeting from "./components/Greeting";
 import ShoppingList from "./ShoppingList";
 import OrderStatus from "./OrderStatus";
@@ -24,14 +23,17 @@ function App() {
     <>
       <div>
         <Greeting name="Mark" />
+        <Greeting name="Alice" />
+        <Greeting name="John" />
+        <hr />
+
         <ShoppingList items={items} />
         <hr />
 
-
         <ul>
           {orders.map(({ orderId, status }) => (
-            <li>
-              <OrderStatus key={orderId} orderId={orderId} status={status} />
+            <li key={orderId}>
+              <OrderStatus orderId={orderId} status={status} />
             </li>
           ))}
         </ul>

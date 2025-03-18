@@ -1,9 +1,9 @@
 export default function OrderStatus({ orderId, status }) {
   return (
     <div>
-      <h3>
+      <h4>
         Заказ #{orderId}: {status}
-      </h3>
+      </h4>
     </div>
   );
 }

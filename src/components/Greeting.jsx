@@ -1,9 +1,7 @@
- 
-
-export default function Greeting({name}) {
+export default function Greeting({ name }) {
   return (
     <div>
-      <h1>Привет, {name}</h1>
+      <h3>Привет, {name}</h3>
     </div>
-  )
+  );
 }

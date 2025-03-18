@@ -5,6 +5,7 @@ export default function ShoppingList({ items }) {
 
   return (
     <div>
+      <h2>Список покупок</h2>
       {items.map((item) => (
         <ul>
           <li key={item}>{item}</li>
