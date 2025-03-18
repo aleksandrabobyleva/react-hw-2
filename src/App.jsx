@@ -1,6 +1,6 @@
 import Greeting from "./components/Greeting";
-import ShoppingList from "./ShoppingList";
-import OrderStatus from "./OrderStatus";
+import ShoppingList from "./components/ShoppingList";
+import OrderStatus from "./components/OrderStatus";
 
 function App() {
   const items = [
